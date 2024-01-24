@@ -1,0 +1,1588 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a {
+    word-break: keep-all !important;
+}
+
+
+/* ---------------------TITRE SECTION----------------------------- */
+#titre-section-contenue {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 0.5px;
+    background-color: #0E5B2E;
+    margin: 10px 0 10px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    transform: skew(-5deg);
+}
+
+#titre-section-contenue span {
+    background: #0E5B2E;
+    color: white;
+    font-style: italic;
+    padding: 2px 10px;
+
+}
+
+
+.titre-section {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 40px;
+
+}
+
+/*----------------------- MODAL PANNEL----------------------------------- */
+@media (min-width: 992px) {
+    .modal-body .studio-item {
+        padding: 1%;
+
+    }
+}
+
+
+.modal-body .studio-item {
+    margin: 0;
+
+}
+
+.modal-body .studio-item {
+    text-align: center;
+    color: white;
+}
+
+.modal-body .rubrique-studio {
+    text-align: left;
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    min-height: 70px;
+}
+
+.modal-body .img-studio {
+    width: 100%;
+}
+
+.modal-body .test {
+    position: relative;
+    width: 100%;
+    /* The size you want */
+    margin-bottom: 20px;
+}
+
+.modal-body .test:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+}
+
+.modal-body .test .img-studio {
+    position: absolute;
+    /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Make the picture taking the size of it's parent */
+    width: 100%;
+    /* This if for the object-fit */
+    height: 100%;
+    /* This if for the object-fit */
+    object-fit: cover;
+    /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+
+}
+
+.modal-body .hr {
+    display: none;
+}
+
+@media (max-width: 991.5px) {
+    .modal-body .hr {
+        display: block;
+        color: white;
+    }
+
+    .modal-body .test {
+        position: relative;
+        width: 200px;
+        /* The size you want */
+        margin-bottom: 20px;
+    }
+
+    .modal-body .conteneur-info-studio {
+        position: relative;
+        display: block;
+        width: fit-content;
+        height: 100%;
+        padding-top: 20px;
+        margin-left: 210px;
+    }
+
+
+    .modal-body .studio-item {
+        width: 100%;
+        height: 180px;
+        margin: 10px auto 10px auto;
+        text-align: left;
+        line-height: 2;
+    }
+
+    .modal-body .h6span {
+        line-height: 0;
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+
+    }
+
+    .modal-body .sizing-rubrique {
+        height: 70px;
+        overflow: auto;
+    }
+
+
+
+    .modal-body .btn-studio {
+        margin: 0;
+        position: absolute;
+        font-size: 10px;
+        bottom: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .modal-body .hr {
+        display: block;
+        color: white;
+    }
+
+    .modal-body .test {
+        position: relative;
+        width: 150px;
+        /* The size you want */
+        margin-bottom: 20px;
+    }
+
+    .modal-body .conteneur-info-studio {
+        position: relative;
+        display: block;
+        width: fit-content;
+        height: 100%;
+        padding-top: 0;
+        margin-left: 160px;
+    }
+
+
+    .modal-body .studio-item {
+        width: 100%;
+        height: 130px;
+        margin: 10px auto 10px auto;
+        text-align: left;
+        line-height: 2;
+    }
+
+    .modal-body .h6span {
+        line-height: 0;
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+
+    }
+
+    .modal-body .sizing-rubrique {
+        height: 70px;
+        overflow: auto;
+    }
+
+    .modal-body .rubrique-studio {
+
+        min-height: 100%;
+        padding-top: 2px;
+        font-size: 12px;
+    }
+
+    .modal-body .btn-studio {
+        margin: 0;
+        position: absolute;
+        font-size: 10px;
+        bottom: 0px;
+    }
+}
+
+/*--------------------------------------- STUDIO PANNEL CSS ------------*/
+h2 {
+    margin-top: 20px;
+    color: white;
+}
+
+.title-studio {
+    text-align: center;
+}
+
+.soustitre-studio {
+    color: white;
+    opacity: 0.5;
+}
+
+.hr-studio {
+    width: 99%;
+    margin-bottom: 30px;
+}
+
+.test {
+    position: relative;
+    width: 100%;
+    /* The size you want */
+    margin-bottom: 20px;
+}
+
+.test:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+    /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+}
+
+.test .img-studio {
+    position: absolute;
+    /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Make the picture taking the size of it's parent */
+    width: 100%;
+    /* This if for the object-fit */
+    height: 100%;
+    /* This if for the object-fit */
+    object-fit: cover;
+    /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+
+}
+
+
+.studio-item {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+#Studio {
+    background: #151515;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+.rubrique-studio {
+    text-align: left;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    min-height: 100px;
+    padding: 0 15%;
+
+}
+
+
+
+.span-studio {
+    opacity: 0.7;
+}
+
+.hr {
+    display: none;
+}
+
+.btn-studio {
+    width: fit-content;
+}
+
+/*---------------------------------- RESPONSIVENESS STUDIO ------------------------*/
+.dot {
+    display: flex;
+}
+
+@media (max-width: 991px) {
+    .dot {
+        display: none;
+    }
+
+    .hr {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+    }
+
+    .sizing-rubrique {
+        height: 140px;
+        overflow: auto;
+    }
+
+    .rubrique-studio {
+        min-height: unset;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .studio-item {
+        width: 100%;
+        height: 280px;
+        margin: 10px auto 10px auto;
+        text-align: left;
+        line-height: 2;
+    }
+
+
+    .conteneur-info-studio {
+        position: relative;
+        display: block;
+        width: fit-content;
+        height: 100%;
+        padding-top: 20px;
+        margin-left: 320px;
+    }
+
+
+
+    .test {
+        width: 300px;
+        /* The size you want */
+        height: 100%;
+        float: left;
+    }
+
+    .h6span {
+        position: absolute;
+        left: 0;
+        bottom: 60px;
+
+    }
+
+
+    .btn-studio {
+        margin: 0;
+        position: absolute;
+        bottom: 0px;
+    }
+
+
+}
+
+
+@media (max-width:660px) {
+    .hr {
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+    }
+
+    .sizing-rubrique {
+        height: 110px;
+        overflow: auto;
+    }
+
+    /* ------------- */
+    .rubrique-studio {
+        height: 100%;
+        min-height: unset;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .studio-item {
+        width: 100%;
+        height: 200px;
+        margin: 10px auto 10px auto;
+        text-align: left;
+        line-height: 1;
+    }
+
+    .conteneur-info-studio {
+        position: relative;
+        display: block;
+        width: fit-content;
+        height: 100%;
+        padding-top: 5px;
+        margin-left: 220px;
+    }
+
+
+    .test {
+        width: 200px;
+        /* The size you want */
+        height: 100%;
+        float: left;
+    }
+
+    .h6span {
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+
+    }
+
+    .h6span>h6 {
+        font-size: 12px;
+    }
+
+    .h6span>.span-studio {
+        font-size: 10px;
+    }
+
+
+    .btn-studio {
+        margin: 0;
+        position: absolute;
+        bottom: 0px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width:480px) {
+    .hr {
+        width: 100%;
+        height: 2px;
+        background-color: gray;
+    }
+
+    .sizing-rubrique {
+        height: 60px;
+        overflow: auto;
+    }
+
+    /* ------------- */
+    .rubrique-studio {
+        height: 100%;
+        min-height: unset;
+        font-size: 14px;
+    }
+
+
+    .studio-item {
+        width: 100%;
+        height: 150px;
+        margin: 10px auto 10px auto;
+        text-align: left;
+        line-height: 1;
+    }
+
+    .conteneur-info-studio {
+        position: relative;
+        display: block;
+        width: fit-content;
+        height: 100%;
+        margin-left: 155px;
+    }
+
+    .test {
+        width: 150px;
+        /* The size you want */
+        height: 100%;
+        float: left;
+    }
+
+    .h6span {
+        position: absolute;
+        left: 0;
+        bottom: 35px;
+
+    }
+
+    .h6span>h6 {
+        font-size: 10px;
+    }
+
+    .h6span>.span-studio {
+        font-size: 8px;
+    }
+
+
+    .btn-studio {
+        margin: 0;
+        position: absolute;
+        bottom: 10px;
+        line-height: 1.5;
+        font-size: 0.5rem;
+
+    }
+
+}
+
+
+
+
+
+/* -------------------------------NAVBAR LIVE------------------------------------- */
+.img-live {
+    width: 100%;
+}
+
+
+/* NAVBAR MENU*/
+
+.nav-item {
+    font-size: 15px;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+
+
+/* NAVBAR */
+
+
+
+/* ------------------------------------NAVBAR SECOND ------------------------------------ */
+
+#studiobtn {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+#clubmbtn {
+    font-weight: bolder;
+    font-style: italic;
+}
+
+@media (max-width:820px) {
+    #img2p {
+        display: none;
+    }
+
+    #pic2 {
+        float: right;
+        padding: 0 !important;
+        width: 50% !important;
+    }
+}
+
+.navbar-second {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    background-color: white;
+}
+
+.date-langue {
+    text-align: left;
+    margin: auto;
+    width: 33.33%;
+    padding: 5px 3%;
+    font-size: 70%;
+}
+
+.date-langue p {
+    margin: 2px 0 0 0;
+    word-spacing: 2;
+    font-size: 140%;
+}
+
+.date-langue span {
+    color: #5E5E5E;
+
+}
+
+.radiom {
+    text-align: center;
+    margin: auto;
+    width: 33.33%;
+    padding: 1% 0;
+
+}
+
+.deux-img {
+    text-align: center;
+    margin: auto;
+    width: 33.33%;
+    padding: 1% 30px 1% 0;
+}
+
+#pic {
+    width: 30%;
+}
+
+#pic2 {
+    width: 30%;
+}
+
+.date-langue select {
+    border-radius: 2px solid black;
+    height: 20px;
+    min-width: 80px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+}
+
+@media (max-width:500px) {
+    .date-langue p {
+        font-size: 100%;
+    }
+
+    .date-langue span {
+        display: none;
+    }
+
+    #selectlang {
+        display: none;
+    }
+
+}
+
+
+/* STICKY NAV */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.sticky+.pub1 {
+    padding-top: 9.4rem;
+}
+
+
+
+/* ----------------ESPACE PREMIER PUBLICITER--------------- */
+.pub1 {
+    width: 100%;
+    padding: 20px;
+}
+
+.pub1 img {
+    width: 100%;
+}
+
+.contenue {
+    width: 100%;
+    height: 300px;
+    ;
+}
+
+/* ---------------------------CONTENUE A LA UNE ET BLOG---------------------------- */
+.image2,
+.image3 {
+    width: 100%;
+    height: 330px !important;
+}
+
+.image1 img,
+.image2 img,
+.image3 img,
+.image4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.image1 {
+    min-height: 330px;
+    max-height: 670px;
+}
+
+
+.image1,
+.image2,
+.image3 {
+    position: relative;
+    height: 100%;
+
+
+}
+
+
+
+.blog-header {
+    text-align: center;
+    color: #0E5B2E;
+}
+
+.blog-header>h3 {
+    margin-top: 15px;
+    line-height: 0.2;
+    font-weight: 700;
+}
+
+.blog-header>p {
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.blog-header>hr {
+    border: none;
+    height: 3px;
+    width: 100%;
+    background-color: #0E5B2E;
+    opacity: 1;
+    margin: auto;
+}
+
+
+
+.image1>p {
+    font-size: 30px;
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    max-height: 300px;
+    overflow: auto;
+    line-height: 1.2;
+}
+
+
+
+.image1>.hashtags,
+.image2>.hashtags,
+.image3>.hashtags {
+
+    width: calc(100% - 10px);
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    flex-direction: row;
+    gap: 0.2rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+}
+
+.image1>.hashtags>h3,
+.image2>.hashtags>h3,
+.image3>.hashtags>h3 {
+
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.image2>p,
+.image3>p {
+    position: absolute;
+    font-size: 18px;
+    bottom: 30px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1.2;
+    max-height: 100px;
+    overflow: auto;
+}
+
+.lien_alaune {
+    text-decoration: none;
+    color: white;
+}
+
+.lien_blog {
+    text-decoration: none;
+    color: black;
+}
+
+.lien_alaune:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.lien_blog:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+.image2>h3,
+.image3>h3 {
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: #F10000;
+    border-radius: 5px;
+}
+
+.date-redaction {
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+.blog-container {
+    text-align: left;
+    padding: 10px;
+}
+
+.blog-container>p {
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    border-bottom: 1px solid #555;
+}
+
+
+.blog-container>p>.categorie-blog {
+    margin-top: 10px;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+.blog-container>p>.redacteur-blog {
+    display: block;
+    font-size: 12px;
+
+}
+
+.blog-container>p>.date-redaction {
+    display: block;
+}
+
+@media (max-width: 600px) {
+
+    .image1>.hashtags>h3,
+    .image2>.hashtags>h3,
+    .image3>.hashtags>h3 {
+        display: none;
+    }
+}
+
+/* ----------------------------------------POLITIQUE------------------------------------- */
+@media (max-width: 991.5px) {
+    .contenue-et-pub {
+        display: none;
+    }
+}
+
+#border-col {
+    border-right: 1px solid #555;
+}
+
+.politic-container {
+    text-align: left;
+    padding: 10px;
+    margin: auto;
+    border-bottom: 1px solid #555;
+}
+
+.politic-container>p {
+
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+
+}
+
+
+.politic-container>p>.categorie-blog {
+    text-align: right;
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+
+
+.politic-container>p>.date-redaction {
+    display: block;
+    text-align: right;
+}
+
+.politic-container>p>.politic-article-info {
+    text-align: right;
+}
+
+.politic-image {
+    position: relative;
+    width: 100%;
+    /* The size you want */
+}
+
+.politic-image:after {
+    content: "";
+    display: block;
+    padding-bottom: 62.5%;
+    /* The padding depends on the width, not on the height, so with a padding-bottom of 100% you will get a square */
+}
+
+.politic-image img {
+    position: absolute;
+    /* Take your picture out of the flow */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Make the picture taking the size of it's parent */
+    width: 100%;
+    /* This if for the object-fit */
+    height: 100%;
+    /* This if for the object-fit */
+    object-fit: cover;
+    /* Equivalent of the background-size: cover; of a background-image */
+    object-position: center;
+
+}
+
+/* -------------------------------INTERNATIONAL---------------------------------------- */
+
+
+.international {
+
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    margin: 50px auto;
+    padding: 50px 20px;
+    color: white;
+}
+
+.contenue-international {
+    position: relative;
+    width: 100%;
+    height: 490px;
+
+}
+
+
+
+.overlaytop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #1e2024);
+    z-index: 1;
+}
+
+.posion-contenue-internat {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contenue-te3eh {
+    position: absolute;
+    bottom: 0;
+}
+
+.contenue-te3eh>h3 {
+    font-weight: 700;
+    max-height: 200px;
+    overflow: auto;
+    font-size: 2rem;
+}
+
+.international-donnee {
+    text-transform: uppercase;
+}
+
+.international-donnee>p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.international-donnee>a {
+    text-decoration: none;
+    color: white;
+}
+
+.international-donnee>a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width:600px) {
+    .contenue-international {
+        height: 300px;
+    }
+
+    .contenue-te3eh>.international-img-text {
+        max-height: 120px;
+        font-size: 1.1rem;
+    }
+
+    .international-donnee>p {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .international-donnee>span {
+        font-size: 10px;
+    }
+
+    .international-donnee>a {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:430px) {
+    .contenue-international {
+        height: 200px;
+    }
+
+
+    .contenue-te3eh>.international-img-text {
+        max-height: 80px;
+        font-size: 10px;
+    }
+
+    .international-donnee>p {
+        font-size: 7px;
+        font-weight: 700;
+    }
+
+    .international-donnee>span {
+        font-size: 5px;
+    }
+
+    .international-donnee>a {
+        font-size: 5px;
+    }
+
+}
+
+
+
+.contenue-international-blog {
+    border-top: 1px solid #555;
+    width: 100%;
+    height: fit-content;
+}
+
+.international-container {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
+.international-container>p {
+
+    text-align: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    border-bottom: 1px solid rgb(108, 108, 108);
+    overflow: auto;
+}
+
+.international-container>p>.lien_blog {
+    text-align: left;
+    display: inline-block;
+    max-height: 60px;
+    overflow: auto;
+}
+
+
+.international-container>p>.categorie-blog {
+    display: block;
+    margin: 10px auto;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.international-container>p>.categorie-blog2>a {
+    color: white;
+    display: block;
+    margin: 10px auto;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    opacity: 0.7;
+}
+
+.international-container>p>.categorie-blog2>a:hover {
+    text-decoration: white underline;
+}
+
+
+.international-container>p>.date-redaction {
+    font-size: 10px;
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width:991.5px) and (min-width:500px) {
+    .international-container>p {
+        padding-right: 10px;
+        border-right: 1px solid rgb(108, 108, 108);
+        font-size: 1rem;
+    }
+
+    .international-container {
+        padding: 10px;
+        display: inline-block;
+        width: 49%;
+    }
+
+}
+
+@media (max-width:500px) {
+    .international-container>p {
+        font-size: 0.8rem;
+    }
+
+    .international-container>p>.categorie-blog {
+        font-size: 10px;
+    }
+
+    .international-container>p>.date-redaction {
+        font-size: 7px;
+    }
+}
+
+/* ---------------------------SPORT----------------------------------- */
+.sport {
+    width: 100%;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 20px;
+    color: white;
+}
+
+/* ---------------CAROUSEL AUTRES-------------------- */
+#titre-autre {
+    padding-top: 0 !important;
+}
+
+.owl-carousel .owl-nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-top: -10px;
+    color: rgb(0, 0, 0) !important;
+    -webkit-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+    opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .owl-carousel .owl-nav .owl-prev,
+    .owl-carousel .owl-nav .owl-next {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+.owl-carousel .owl-nav .owl-prev span:before,
+.owl-carousel .owl-nav .owl-next span:before {
+    font-size: 16px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .owl-carousel .owl-nav .owl-prev span:before,
+    .owl-carousel .owl-nav .owl-next span:before {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+
+.owl-carousel .owl-nav .owl-prev:hover span:before,
+.owl-carousel .owl-nav .owl-next:hover span:before {
+    color: #3aba70;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    right: 0;
+    margin-right: 20px;
+}
+
+.owl-carousel .owl-nav .owl-next {
+    right: 0;
+}
+
+
+
+
+/* --------------------------------------------- */
+#titre-autre {
+    padding-top: 40px;
+    font-size: 1.2rem;
+    color: #0E5B2E;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.autre-container {
+    text-align: left;
+    margin: auto;
+    border-bottom: 1px solid #555;
+}
+
+.autre-container>p {
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+}
+
+
+.autre-container>p>.categorie-blog {
+    text-align: left;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    line-height: 1.2;
+}
+
+.autre-container>p>.categorie-blog:hover {
+    text-decoration: underline;
+}
+
+.autre-container>p>.lien_blog {
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin: 10px auto;
+}
+
+.autre-container>p>.lien_blog:hover {
+    text-decoration: underline;
+}
+
+.autre-container>p>.date-redaction {
+    display: block;
+    text-align: left;
+}
+
+
+
+/* ---------------FOOOTER RADIOM----------------- */
+.footer-radiom {
+
+    background-color: black;
+    color: white;
+    padding: 3%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-radiom .paragraph {
+    width: 75%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px 0 10px 1.5%;
+    border-left: 2px solid white;
+    justify-content: center;
+}
+
+
+.foot-img {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 25%;
+    align-self: flex-start;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+}
+
+#foot-social-hid {
+    display: none;
+}
+
+.foot-img>img {
+    width: 100%;
+
+}
+
+.footer-social {
+    height: 37px;
+    margin: 15px 0 0 0;
+    display: flex;
+    gap: 10px;
+}
+
+.icons-footer {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    display: inline;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+
+}
+
+#facebook {
+    padding: 10px 12px 10px 12px;
+}
+
+.icons-footer:hover {
+    color: rgb(255, 114, 114);
+    border: 1px solid rgb(255, 114, 114);
+}
+
+@media(max-width:700px) {
+    #foot-social-nothid {
+        display: none;
+    }
+
+    #foot-social-hid {
+        display: block;
+    }
+
+    .footer-radiom {
+        flex-direction: column;
+    }
+
+    .foot-img {
+        width: 100%;
+    }
+
+    .foot-img>img {
+        width: 50%;
+
+    }
+
+    .footer-radiom .paragraph {
+        width: 100%;
+        font-size: 0.7rem;
+        border-left: none;
+        border-top: 2px solid white;
+        padding-top: 2%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCROLLBAR PERSONALISER */
+/* width */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ---------------------FOR JS------------------------ */
+.displayinlineblock {
+    display: inline-block;
+}
+
+.nonedisplay {
+    display: none;
+}
+
+.displayinline {
+    display: inline;
+}
+
+.displayblock {
+    display: block;
+}
+
+/* LANGUAGE ON SCROLL */
+.share-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+
+.share-btn:hover {
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+    opacity: 1;
+}
+
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.share-btn span {
+    height: 40px;
+    width: 40px;
+    background: #008D39;
+    line-height: 40px;
+    font-size: 30px;
+    color: #e9fcf8;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #008D39;
+}
+
+.share-btn:hover span {
+    background: #008D39;
+    border-color: #008D39;
+}
+
+.share-btn a span {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    border: 1px solid transparent;
+    background: #008D39;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.6s;
+}
+
+#click:checked~.share-btn a span {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    z-index: 1;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#click:checked~.share-btn a:nth-child(2) span {
+    font-weight: 900;
+    bottom: 0px;
+    right: 50px;
+    background: #555;
+    border-color: #555;
+}
+
+#click:checked~.share-btn a:nth-child(3) span {
+    font-weight: 900;
+    bottom: 35px;
+    right: 35px;
+    background: #555;
+    border-color: #555;
+}
+
+.share-btn a:nth-child(3) span {
+    transition-delay: 0.2s;
+}
+
+#click:checked~.share-btn a:nth-child(4) span {
+    font-weight: 900;
+    bottom: 50px;
+    right: 0px;
+    background: #555;
+    border-color: #555;
+}
+
+.share-btn a:nth-child(4) span {
+    transition-delay: 0.4s;
+}
+
+#click {
+    display: none;
+}
